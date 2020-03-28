@@ -48,8 +48,7 @@ class shodan:
                         data=self.payload,
                     )
                     # login failed or not
-                    denied = "DENIED" in r.text
-                    if not denied:
+                    if "DENIED" not in r.text:
                         # append IP address to file
                         with open(self.filename, "a") as f:
                             f.write(
@@ -67,6 +66,6 @@ class shodan:
 
 
 if __name__ == "__main__":
-	print("Scanning...")
-	shodan = shodan()
-	shodan.get_results(page=1)
+    print("Scanning...")
+    shodan = shodan()
+    shodan.get_results(page=1)
