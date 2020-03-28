@@ -21,8 +21,10 @@ class shodan:
             "FILEFAIL": "denied.htm",
             "Submit": "OK",
         }
+
+        # Search query and save to file
         self.searchQuery = "boa Content-Length: 963 country:US"
-        self.filename = "unsecure.txt"
+        self.filename = "unsecure2.txt"
 
     def get_results(self, page=1):
         # get results
@@ -65,5 +67,6 @@ class shodan:
 
 
 if __name__ == "__main__":
-    shodan = shodan()
-    shodan.get_results()
+	print("Scanning...")
+	shodan = shodan()
+	shodan.get_results(page=1)
