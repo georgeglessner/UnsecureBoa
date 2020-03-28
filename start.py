@@ -27,7 +27,7 @@ class shodan:
         self.filename = "unsecure.txt"
 
     def get_results(self, page=1):
-        # get results
+        # get results from shodan
         results = self.api.search(self.searchQuery, page=page)
 
         # calculate number of pages (100 results per page)
