@@ -12,3 +12,5 @@ Python3
 - `pip3 install -r requirements.txt`
 
 - `./start.py`
+
+- A lit of IP address will be stored in `unsecure.txt`

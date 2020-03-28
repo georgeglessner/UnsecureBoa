@@ -24,7 +24,7 @@ class shodan:
 
         # Search query and save to file
         self.searchQuery = "boa Content-Length: 963 country:US"
-        self.filename = "unsecure2.txt"
+        self.filename = "unsecure.txt"
 
     def get_results(self, page=1):
         # get results
