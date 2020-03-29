@@ -13,4 +13,4 @@ Python3
 
 - `./start.py`
 
-- A lit of IP address will be stored in `unsecure.txt`
+- A list of IP address will be stored in `unsecure.txt`
